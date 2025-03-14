@@ -9,12 +9,15 @@ import PopularNewsSection from "@/components/popular";
 import Newspara from "@/components/newsPara";
 import Columnist from "@/components/coloumnist";
 import WorldNewsSection from "@/components/worldNews";
+import LifestyleArticleSection from "@/components/lifeStyleComponent";
+import SideArticles from "@/components/sideArticle";
+import NewsHead from "@/components/newsHead";
 
 const article: Article = {
   title:
     "Ukraine Hits Moscow With Its Biggest Drone Attack, Hours Ahead of Talks",
   subtitle:
-    "Russia said it had downed more than 300 drones just hours before the first high-level talks between Washington and Kyiv since a tense Oval Office meeting.",
+    "Russia said it had downed more than 300 drones just hours before the first high-level talks between Washington and Kyiv since a tense Oval Office meeting.Russia said it had downed more than 300 drones just hours before the first high-level talks between Washington and Kyiv since a tense Oval Office meeting.",
   readTime: 4,
 };
 
@@ -159,13 +162,13 @@ const columnistsData = [
   {
     title: "Is Buying an eSIM for a Trip Abroad Worth the Hassle?",
     author: "Dawn Gilbertson",
-    authorImage: "https://images.wsj.net/im-548480", 
+    authorImage: "https://images.wsj.net/im-548480",
     authorSlug: "dawn-gilbertson",
   },
   {
     title: "Why America Now Eats a Crazy Number of Avocados",
     author: "Ben Cohen",
-    authorImage: "https://images.wsj.net/im-555630/ba", 
+    authorImage: "https://images.wsj.net/im-555630/ba",
     authorSlug: "ben-cohen",
   },
 ];
@@ -174,29 +177,130 @@ const worldNewsData = {
   sectionTitle: "World",
   mainArticle: {
     id: "syria-kurdish",
-    title: "Syria to Integrate U.S.-Backed Kurdish Militia Into Armed Forces in Win for New Leader",
-    summary: "The agreement strengthens the government's effort to unify the country after sectarian killings inflamed tensions among minorities.",
-    image: "https://images.wsj.net/im-98750252?width=608&height=405&pixel_ratio=1.5",
-    slug: "syria-kurdish-militia-integration"
+    title:
+      "Syria to Integrate U.S.-Backed Kurdish Militia Into Armed Forces in Win for New Leader",
+    summary:
+      "The agreement strengthens the government's effort to unify the country after sectarian killings inflamed tensions among minorities.",
+    image:
+      "https://images.wsj.net/im-98750252?width=608&height=405&pixel_ratio=1.5",
+    slug: "syria-kurdish-militia-integration",
+  },
+};
+
+const sideArticles = [
+  {
+    id: "trump-envoy",
+    title:
+      "Trump Envoy Further Inflames Israel's Concerns About Direct Talks With Hamas",
+    summary:
+      "Adam Boehler suggested Hamas was willing to lay down its arms in exchange for a truce, in comments that frustrated some Israeli officials.",
+    readTime: "7 min",
+    slug: "trump-envoy-hamas-talks",
+  },
+  {
+    id: "us-china-summit",
+    title: "U.S., China Discuss a Trump-Xi Summit for June",
+    summary:
+      "Talks about a birthday summit, which are in the early stages, come as the Trump administration is ramping up tariffs against China.",
+    readTime: "5 min",
+    isExclusive: true,
+    slug: "us-china-trump-xi-summit",
+  },
+];
+
+const personalFinanceData = {
+  sectionTitle: "Personal Finance",
+  mainArticle: {
+    id: "retirement-planning",
+    title:
+      "The Retirement-Savings Weapon Doctors and Lawyers Use to Build Wealth",
+    summary:
+      "Cash balance plans have exploded in popularity and now hold more than $1 trillion. of wealth.",
+    image:
+      "https://images.wsj.net/im-58227129?width=620&height=413&pixel_ratio=1.5",
+    slug: "secure-retirement-savings",
   },
   sideArticles: [
     {
-      id: "trump-envoy",
-      title: "Trump Envoy Further Inflames Israel's Concerns About Direct Talks With Hamas",
-      summary: "Adam Boehler suggested Hamas was willing to lay down its arms in exchange for a truce, in comments that frustrated some Israeli officials.",
-      readTime: "7 min",
-      slug: "trump-envoy-hamas-talks"
+      id: "budgeting-tips",
+      title: "5 Budgeting Tips to Save More Every Month",
+      summary:
+        "Learn how small financial changes can add up to big savings over time.",
+      readTime: "4 min",
+      slug: "budgeting-tips-saving",
     },
     {
-      id: "us-china-summit",
-      title: "U.S., China Discuss a Trump-Xi Summit for June",
-      summary: "Talks about a birthday summit, which are in the early stages, come as the Trump administration is ramping up tariffs against China.",
-      readTime: "5 min",
+      id: "investing-101",
+      title: "Investing 101: A Beginner's Guide to Building Wealth",
+      summary:
+        "Understanding stocks, bonds, and mutual funds to create a profitable portfolio.",
+      readTime: "6 min",
       isExclusive: true,
-      slug: "us-china-trump-xi-summit"
+      slug: "investing-101-guide",
+    },
+  ],
+};
+
+const lifestyleArticles = [
+  {
+    id: 1,
+    title: "My Daughter Was Dying. Could I Let Her Go?",
+    subtitle:
+      "In her debut memoir, Firstborn, Lauren Christensen must make a choice: continue with a pregnancy that could put her life at risk, or leave the state to terminate.",
+    source: "WSJ. MAGAZINE",
+    imageUrl:
+      "https://images.wsj.net/im-13237841?width=288&height=192&pixel_ratio=1.5", //
+    readTime: 7,
+    slug: "daughter-dying-let-her-go",
+  },
+];
+
+const realEstateData = {
+  sectionTitle: "Real Estate",
+  mainArticle: {
+    id: "blackstone-debt-fund",
+    title:
+      "Exclusive | Blackstone Raises Largest Commercial Property Debt Fund With $8 Billion Haul",
+    image:
+      "https://images.wsj.net/im-80123332?width=220&height=147&pixel_ratio=1.5",
+    slug: "blackstone-debt-fund",
+  },
+  sideArticles: [
+    {
+      id: "castle-home",
+      title: "Making a Centuries-Old English Castle Feel More Like Home",
+      slug: "castle-home",
+    },
+    {
+      id: "kitchen-table-vs-island",
+      title:
+        "Why a Kitchen Table Beats an Island, According to People Who Made the Switch",
+      slug: "kitchen-table-vs-island",
+    },
+  ],
+};
+
+const sportsData={
+  sectionTitle:"Sports",
+  mainArticle:{
+    id:"the-blaffing-ball",
+    title:"The Baffling Call That Decided a Champions League Shootout",
+    image:"https://images.wsj.net/im-58700551?width=220&height=147&pixel_ratio=1.5",
+    slug:"the-blaffing-ball"
+  },
+  sideArticles:[
+    {
+      id:"fall-in-love",
+      title:"Why You Should Fall in Love With the Cleveland Cavaliers",
+      slug:"fall-in-love"
+    },
+    {
+      id:"commodity-in-baseball",
+      title:"They’re the Most Valuable Commodity in Baseball—and They’re Hiding in the Bullpen",
+      slug:"commodity-in-baseball"
     }
   ]
-};
+}
 
 export default function Home() {
   return (
@@ -274,54 +378,97 @@ export default function Home() {
           <PopularNewsSection popularNews={popularNewsData} />
         </div>
       </div>
-       <div className="row">
+      <div className="row">
         <div className="col-lg-8">
-        <Columnist columnists={columnistsData} />
+          <Columnist columnists={columnistsData} />
         </div>
 
         <div className="col-lg-4">
-        <PopularNewsSection popularNews={popularNewsData} />
+          <PopularNewsSection popularNews={popularNewsData} />
         </div>
-
-       </div>
-       <div className="row">
-
-      
+      </div>
+      <div className="row">
         <div className="col-lg-6">
-        <NewsHeadline {...article} />
+          <NewsHeadline {...article} />
         </div>
         <div className="col-lg-6">
-        <NewsHeadline {...article} />
+          <NewsHeadline {...article} />
         </div>
         <div className="col-lg-6">
-        <NewsHeadline {...article} />
+          <NewsHeadline {...article} />
         </div>
-        
+
         <div className="col-lg-6">
-        <NewsBox article={featuredArticles[3]} />
+          <NewsBox article={featuredArticles[3]} />
         </div>
-       </div>
+      </div>
 
-        <div className="row">
-
-          <div className="col-lg-12">
-          <div className=" col-lg-8 py-2">
-      <WorldNewsSection 
-        sectionTitle={worldNewsData.sectionTitle}
-        mainArticle={worldNewsData.mainArticle}
-        sideArticles={worldNewsData.sideArticles}
-      />
-    </div>
-          </div>
-
-          {/* <div className="col-lg-4">
-         <PopularNewsSection popularNews={popularNewsData} />
-          </div> */}
+      <div className="row news-container">
+        <div className="col-lg-6 py-2 ">
+          <WorldNewsSection
+            sectionTitle={worldNewsData.sectionTitle}
+            mainArticle={worldNewsData.mainArticle}
+          />
         </div>
+        <div className="col-lg-4 py-5">
+          <LifestyleArticleSection
+            sectionTitle="Lifestyle"
+            articles={lifestyleArticles}
+          />
+        </div>
+      </div>
 
-   
-    
-      
+      <div className="row">
+        <div className="col-lg-6 py-2">
+          <WorldNewsSection
+            sectionTitle={personalFinanceData.sectionTitle}
+            mainArticle={personalFinanceData.mainArticle}
+          />
+        </div>
+        <div className="col-lg-4 py-5">
+          <LifestyleArticleSection
+            sectionTitle="Lifestyle"
+            articles={lifestyleArticles}
+          />
+        </div>
+      </div>
+      <SideArticles articles={sideArticles} />
+      <SideArticles articles={sideArticles} />
+      <div className="row">
+      <div className=" col-lg-6 rrr">
+        <NewsHead
+          sectionTitle={realEstateData.sectionTitle}
+          mainArticle={realEstateData.mainArticle}
+          sideArticles={realEstateData.sideArticles}
+        />
+      </div>
+      <div className=" col-lg-6 rrr">
+        <NewsHead
+          sectionTitle={sportsData.sectionTitle}
+          mainArticle={sportsData.mainArticle}
+          sideArticles={sportsData.sideArticles}
+        />
+      </div>
+      </div>
+
+      <div className="row">
+      <div className=" col-lg-6 rrr">
+        <NewsHead
+          sectionTitle={sportsData.sectionTitle}
+          mainArticle={sportsData.mainArticle}
+          sideArticles={sportsData.sideArticles}
+        />
+      </div>
+      <div className=" col-lg-6 rrr">
+        <NewsHead
+          sectionTitle={realEstateData.sectionTitle}
+          mainArticle={realEstateData.mainArticle}
+          sideArticles={realEstateData.sideArticles}
+        />
+      </div>
+      </div>
+
+
     </div>
   );
 }

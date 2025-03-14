@@ -14,77 +14,66 @@ interface NewsArticle {
 }
 
 interface WorldNewsSectionProps {
-  sectionTitle: string;
-  mainArticle: NewsArticle;
-  sideArticles: NewsArticle[];
+  sectionTitle?: string;
+  mainArticle?: NewsArticle;
+  sideArticles?: NewsArticle[];
 }
 
 const WorldNewsSection: React.FC<WorldNewsSectionProps> = ({ 
-  sectionTitle, 
+  sectionTitle = "News", 
   mainArticle, 
-  sideArticles 
+  sideArticles = [] 
 }) => {
   return (
     <section className="world-news-section">
       <div className="section-header">
-        <h2 className="section-title">{sectionTitle}</h2>
+        {sectionTitle && <h2 className="section-title">{sectionTitle}</h2>}
         <Link href="/world" className="view-all-link">
           View All <span className="arrow">›</span>
         </Link>
       </div>
 
-      <div className="news-container">
-        <div className="main-article">
-          {mainArticle.image && (
-            <div className="main-article-image">
-              <Link href={`/article/${mainArticle.slug}`}>
-                <img 
-                  src={mainArticle.image} 
-                  alt={mainArticle.title} 
-                  className="img-fluid"
-                />
-              </Link>
-            </div>
-          )}
-          
-          <div className="main-article-content">
-            <h3 className="article-title">
-              <Link href={`/article/${mainArticle.slug}`}>
-                {mainArticle.title}
-              </Link>
-            </h3>
-            <p className="article-summary">{mainArticle.summary}</p>
-            {mainArticle.readTime && (
-              <div className="read-time">
-                <span className="clock-icon">⏱</span> {mainArticle.readTime} read
+      <div className="">
+        {/* Render only if mainArticle exists */}
+        {mainArticle && (
+          <div className="main-article">
+            {mainArticle.image && (
+              <div className="main-article-image">
+                <Link href={`/article/${mainArticle.slug}`}>
+                  <img 
+                    src={mainArticle.image} 
+                    alt={mainArticle.title} 
+                    width={600}
+                    height={400}
+                    className="img-fluid"
+                  />
+                </Link>
               </div>
             )}
-          </div>
-        </div>
-
-        <div className="side-articles">
-          {sideArticles.map((article, index) => (
-            <div key={article.id} className="side-article">
-              {article.isExclusive && (
-                <span className="exclusive-badge">EXCLUSIVE</span>
-              )}
+            
+            <div className="main-article-content">
               <h3 className="article-title">
-                <Link href={`/article/${article.slug}`}>
-                  {article.title}
+                <Link href={`/article/${mainArticle.slug}`}>
+                  {mainArticle.title}
                 </Link>
               </h3>
-              <p className="article-summary">{article.summary}</p>
-              {article.readTime && (
+              <p className="article-summary">{mainArticle.summary}</p>
+              {mainArticle.readTime && (
                 <div className="read-time">
-                  <span className="clock-icon">⏱</span> {article.readTime} read
+                  <span className="clock-icon">⏱</span> {mainArticle.readTime} read
                 </div>
               )}
             </div>
-          ))}
-        </div>
+          </div>
+
+          
+        )}
+
+
       </div>
     </section>
   );
 };
+
 
 export default WorldNewsSection;

@@ -916,3 +916,215 @@
     font-size: 14px;
   }
 }
+
+.wsj-footer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footer-heading {
+  font-size: 0.9rem;
+}
+
+.footer-links li a {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline !important;
+}
+
+.back-to-top {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #555;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+
+.social-icon {
+  color: #333;
+}
+
+.affiliate-links {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 767px) {
+  .footer-heading {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+  }
+  
+  .col-6:nth-child(-n+2) .footer-heading {
+    margin-top: 0;
+  }
+}
+
+
+/* Add to your global.css */
+
+/* Lifestyle Section Styles */
+.lifestyle-section {
+  margin-bottom: 2rem;
+  font-family: serif;
+}
+
+/* Section Header Styles */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.view-all {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+.view-all i {
+  margin-left: 0.25rem;
+}
+
+/* Lifestyle Article Styles */
+.lifestyle-article {
+  margin-bottom: 1.5rem;
+}
+
+.article-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.article-image-container {
+  background-color: #f0f0f4;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.article-link:hover .article-image {
+  transform: scale(1.03);
+}
+
+.article-source {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-family: sans-serif;
+}
+
+.article-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.article-link:hover .article-title {
+  text-decoration: underline;
+}
+
+.article-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.article-read-time {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.article-read-time i {
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 1.5rem;
+  }
+  
+  .article-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-title {
+    font-size: 1.35rem;
+  }
+}
+
+h2 {
+  font-family: serif;
+  color: #333;
+}
+
+h3 {
+  font-family: serif;
+  color: #333;
+  line-height: 1.3;
+}
+
+.text-primary {
+  color: #0074D9 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+
+a.text-primary {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+a.text-primary span {
+  font-size: 20px;
+  margin-left: 2px;
+}

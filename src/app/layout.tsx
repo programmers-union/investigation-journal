@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/global.css'
 const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
           </div>
           <Header/>
           {children}
-          <footer/>
+          <Footer/>
         </body>
       </html>
     );
