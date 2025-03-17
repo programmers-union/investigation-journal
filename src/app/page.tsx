@@ -4,7 +4,6 @@ import OpinionSection from "@/components/opinion";
 import Article from "../types/Article";
 import NewsBox from "@/components/newsBox";
 import NewsSection from "@/components/newsSection";
-import TipBox from "@/components/popular";
 import PopularNewsSection from "@/components/popular";
 import Newspara from "@/components/newsPara";
 import Columnist from "@/components/coloumnist";
@@ -12,6 +11,8 @@ import WorldNewsSection from "@/components/worldNews";
 import LifestyleArticleSection from "@/components/lifeStyleComponent";
 import SideArticles from "@/components/sideArticle";
 import NewsHead from "@/components/newsHead";
+import RealEstateInsights from "@/components/insight";
+
 
 const article: Article = {
   title:
@@ -302,14 +303,96 @@ const sportsData={
   ]
 }
 
+const celebrityNews = {
+  sectionTitle: "Real Estate Insights",
+  provider: {
+    name: "realtor.com",
+    logo: "/images/realtor-logo.png"
+  },
+  articles: [
+    {
+      id: "1",
+      title: "Rosie O'Donnell Quits U.S. and Moves to Ireland After Donald Trump Win",
+      image: "/images/rosie-odonnell.jpg",
+      slug: "rosie-odonnell-moves-ireland"
+    },
+    {
+      id: "2",
+      title: "Meghan Markle Disgusts Netflix Viewers With Major Kitchen Faux Pas",
+      image: "/images/meghan-markle.jpg",
+      slug: "meghan-markle-kitchen-faux-pas"
+    },
+    {
+      id: "3",
+      title: "Cheryl Hines 'Orders RFK Jr.' To Move Her to DC After Sexting Scandal",
+      image: "/images/cheryl-hines.jpg",
+      slug: "cheryl-hines-rfk-jr-sexting-scandal"
+    },
+    {
+      id: "4",
+      title: "Amanda Seyfried Reveals How Moving to a Farm Helped To Calm Her OCD",
+      image: "/images/amanda-seyfried.jpg",
+      slug: "amanda-seyfried-farm-ocd"
+    },
+    {
+      id: "5",
+      title: "Gwyneth Paltrow Admits She 'Drank Every Night' During L.A. Wildfires",
+      image: "/images/gwyneth-paltrow.jpg",
+      slug: "gwyneth-paltrow-drinking-wildfires"
+    },
+    {
+      id: "6",
+      title: "EXCL: Ellen DeGeneres Lists One of Her Last Remaining Montecito Homes",
+      image: "/images/ellen-degeneres.jpg",
+      slug: "ellen-degeneres-montecito-home"
+    }
+  ]
+};
+
+// Market trends data - another example
+const marketTrends = {
+  sectionTitle: "Market Trends",
+  articles: [
+    {
+      id: "1",
+      title: "Housing Market Cools as Interest Rates Rise to 5.5% in Q1 2025",
+      image: "/images/housing-market.jpg",
+      slug: "housing-market-cools-interest-rates"
+    },
+    {
+      id: "2",
+      title: "Commercial Real Estate Sees Modest Recovery After 2024 Slump",
+      image: "/images/commercial-real-estate.jpg",
+      slug: "commercial-real-estate-recovery"
+    },
+    {
+      id: "3",
+      title: "Urban Exodus Slows: Young Professionals Return to City Centers",
+      image: "/images/urban-living.jpg",
+      slug: "urban-exodus-slows-young-professionals"
+    },
+    {
+      id: "4",
+      title: "Luxury Real Estate Market Remains Strong Despite Economic Uncertainty",
+      image: "/images/luxury-real-estate.jpg",
+      slug: "luxury-real-estate-strong"
+    }
+  ]
+};
+
 export default function Home() {
   return (
-    <div className="container ">
+    <div className="container">
+
       <div className="row ">
-        <div className="col-lg-8">
+      <div className="col-lg-3 py-5">
+          <NewsSection articles={newsArticles} />
+        </div>
+        <div className="col-lg-6">
           <ArticleSection />
         </div>
-        <div className="col-lg-4">
+
+        <div className="col-lg-3">
           <OpinionSection />
         </div>
       </div>
@@ -467,6 +550,18 @@ export default function Home() {
         />
       </div>
       </div>
+
+      {/* <RealEstateInsights 
+        sectionTitle={celebrityNews.sectionTitle}
+        articles={celebrityNews.articles}
+        provider={celebrityNews.provider}
+      /> */}
+      
+      {/* Market trends section without provider logo */}
+      {/* <RealEstateInsights 
+        sectionTitle={marketTrends.sectionTitle}
+        articles={marketTrends.articles}
+      /> */}
 
 
     </div>

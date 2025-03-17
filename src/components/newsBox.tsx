@@ -21,13 +21,14 @@ const NewsBox: React.FC<FeaturedNewsArticleProps> = ({ article }) => {
             width={300}
             height={200}
             alt={title || "Featured article image"}
-            className="featured-image"
+            className="featured-image99"
+          
           />
         </div>
       )}
       
       {title && <h2 className="featured-title">{title}</h2>}
-      {subtitle && <p className="featured-subtitle">{subtitle}</p>}
+      {subtitle && <p className="featured-subtitle ">{subtitle}</p>}
       
       <div className="article-meta">
         {comments !== undefined && (

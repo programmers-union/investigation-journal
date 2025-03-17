@@ -191,21 +191,21 @@ const Header = () => {
             <h3 className="mobile-nav-title h6 mb-2 ps-2">Sections</h3>
             <div className="mobile-nav-items d-flex flex-column">
               <Link href="/" className="nav-link py-2 ps-2 border-bottom">Latest</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">World</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Business</Link>
+              <Link href="/world" className="nav-link py-2 ps-2 border-bottom">World</Link>
+              <Link href="/business" className="nav-link py-2 ps-2 border-bottom">Business</Link>
               <Link href="/" className="nav-link py-2 ps-2 border-bottom">U.S.</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Politics</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Economy</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Tech</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Markets & Finance</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Opinion</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Arts</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Lifestyle</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Real Estate</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Personal Finance</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Health</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Style</Link>
-              <Link href="/" className="nav-link py-2 ps-2 border-bottom">Sports</Link>
+              <Link href="/politics" className="nav-link py-2 ps-2 border-bottom">Politics</Link>
+              <Link href="/economy" className="nav-link py-2 ps-2 border-bottom">Economy</Link>
+              <Link href="/tech" className="nav-link py-2 ps-2 border-bottom">Tech</Link>
+              <Link href="/market-and-finance" className="nav-link py-2 ps-2 border-bottom">Markets & Finance</Link>
+              <Link href="/opinion" className="nav-link py-2 ps-2 border-bottom">Opinion</Link>
+              <Link href="/arts" className="nav-link py-2 ps-2 border-bottom">Arts</Link>
+              <Link href="/lifestyle" className="nav-link py-2 ps-2 border-bottom">Lifestyle</Link>
+              <Link href="/real-estate" className="nav-link py-2 ps-2 border-bottom">Real Estate</Link>
+              <Link href="/personal-finance" className="nav-link py-2 ps-2 border-bottom">Personal Finance</Link>
+              <Link href="/health" className="nav-link py-2 ps-2 border-bottom">Health</Link>
+              <Link href="/style" className="nav-link py-2 ps-2 border-bottom">Style</Link>
+              <Link href="/sports" className="nav-link py-2 ps-2 border-bottom">Sports</Link>
             </div>
           </div>
           
@@ -254,22 +254,22 @@ const Header = () => {
         <div className="container-fluid">
           <div className="nav-container d-flex justify-content-center align-items-center">
             <div className="main-nav d-flex flex-wrap justify-content-center w-100">
-              <Link href="/" className="nav-link">Latest</Link>
-              <Link href="/" className="nav-link">World</Link>
-              <Link href="/" className="nav-link">Business</Link>
-              <Link href="/" className="nav-link">U.S.</Link>
-              <Link href="/" className="nav-link">Politics</Link>
-              <Link href="/" className="nav-link">Economy</Link>
-              <Link href="/" className="nav-link">Tech</Link>
-              <Link href="/" className="nav-link">Markets & Finance</Link>
-              <Link href="/" className="nav-link">Opinion</Link>
-              <Link href="/" className="nav-link">Arts</Link>
-              <Link href="/" className="nav-link">Lifestyle</Link>
-              <Link href="/" className="nav-link">Real Estate</Link>
-              <Link href="/" className="nav-link">Personal Finance</Link>
-              <Link href="/" className="nav-link">Health</Link>
-              <Link href="/" className="nav-link">Style</Link>
-              <Link href="/" className="nav-link">Sports</Link>
+            <Link href="/" className="nav-link">Latest</Link>
+        <Link href="/world" className="nav-link">World</Link>
+        <Link href="/business" className="nav-link">Business</Link>
+        <Link href="/us" className="nav-link">U.S.</Link>
+        <Link href="/politics" className="nav-link">Politics</Link>
+        <Link href="/economy" className="nav-link">Economy</Link>
+        <Link href="/tech" className="nav-link">Tech</Link>
+        <Link href="/market-and-finance" className="nav-link">Markets & Finance</Link>
+        <Link href="/opinion" className="nav-link">Opinion</Link>
+        <Link href="/arts" className="nav-link">Arts</Link>
+        <Link href="/lifestyle" className="nav-link">Lifestyle</Link>
+        <Link href="/real-estate" className="nav-link">Real Estate</Link>
+        <Link href="/personal-finance" className="nav-link">Personal Finance</Link>
+        <Link href="/health" className="nav-link">Health</Link>
+        <Link href="/style" className="nav-link">Style</Link>
+        <Link href="/sports" className="nav-link">Sports</Link>
             </div>
             <div className="search-container">
               <button className="search-btn">
