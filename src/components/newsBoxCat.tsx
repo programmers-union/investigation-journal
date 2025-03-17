@@ -53,7 +53,7 @@ const NewsBoxCat: React.FC<NewsBoxCatPageProps> = ({
                   </div>
                 </Link>
               </div>
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-4 ms-4">
                 <Link href={article.url} passHref>
                   <h2 className="title">{article.title}</h2>
                 </Link>

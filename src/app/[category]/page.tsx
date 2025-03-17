@@ -126,8 +126,8 @@ async function fetchArticles(category: string): Promise<Article[]> {
 }
 
 // Category page component
-export default async function CategoryPage({ params }: { params: { category: string } }) {
-  const { category } = params;
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
   const articles = await fetchArticles(category);
   
   // Transform the articles to match the BusinessCategoryPage component's expected format

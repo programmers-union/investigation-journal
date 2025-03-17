@@ -501,7 +501,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row news-container">
         <div className="col-lg-6 py-2">
           <WorldNewsSection
             sectionTitle={personalFinanceData.sectionTitle}
