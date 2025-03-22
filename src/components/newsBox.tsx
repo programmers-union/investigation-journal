@@ -8,16 +8,16 @@ interface FeaturedNewsArticleProps {
 }
 
 const NewsBox: React.FC<FeaturedNewsArticleProps> = ({ article }) => {
-  const { title, subtitle, readTime, comments, imageUrl } = article;
+  const { title, subtitle, readTime, comments, image_url } = article;
   console.log("article:",article);
   
   
   return (
     <div className="featured-article">
-      {imageUrl && (
+      {image_url && (
         <div className="featured-image-container">
           <img 
-            src={imageUrl} 
+            src={image_url} 
             width={300}
             height={200}
             alt={title || "Featured article image"}

@@ -14,7 +14,7 @@ interface LifestyleArticleItem {
 }
 
 interface LifestyleArticleSectionProps {
-  sectionTitle: string;
+  sectionTitle?: string;
   articles: LifestyleArticleItem[];
 }
 
@@ -24,12 +24,7 @@ const LifestyleArticleSection: React.FC<LifestyleArticleSectionProps> = ({
 }) => {
   return (
     <div className="lifestyle-section">
-      <div className="section-header">
-        <h2 className="section-title">{sectionTitle}</h2>
-        <Link href={`/${sectionTitle.toLowerCase()}`} className="view-all">
-          View All <i className="bi bi-chevron-right"></i>
-        </Link>
-      </div>
+
       
       <div className="lifestyle-articles">
         {articles.map((article) => (

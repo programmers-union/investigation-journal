@@ -254,22 +254,16 @@ const Header = () => {
         <div className="container-fluid">
           <div className="nav-container d-flex justify-content-center align-items-center">
             <div className="main-nav d-flex flex-wrap justify-content-center w-100">
-            <Link href="/" className="nav-link">Latest</Link>
-        <Link href="/world" className="nav-link">World</Link>
-        <Link href="/business" className="nav-link">Business</Link>
-        <Link href="/us" className="nav-link">U.S.</Link>
-        <Link href="/politics" className="nav-link">Politics</Link>
-        <Link href="/economy" className="nav-link">Economy</Link>
-        <Link href="/tech" className="nav-link">Tech</Link>
-        <Link href="/market-and-finance" className="nav-link">Markets & Finance</Link>
-        <Link href="/opinion" className="nav-link">Opinion</Link>
-        <Link href="/arts" className="nav-link">Arts</Link>
-        <Link href="/lifestyle" className="nav-link">Lifestyle</Link>
-        <Link href="/real-estate" className="nav-link">Real Estate</Link>
-        <Link href="/personal-finance" className="nav-link">Personal Finance</Link>
-        <Link href="/health" className="nav-link">Health</Link>
-        <Link href="/style" className="nav-link">Style</Link>
-        <Link href="/sports" className="nav-link">Sports</Link>
+            <Link href="/" className="nav-link">organized-crime</Link>
+        <Link href="/world" className="nav-link">criminal-psychology</Link>
+        <Link href="/business" className="nav-link">true-crime-stories</Link>
+        <Link href="/us" className="nav-link">cybercrime.</Link>
+        <Link href="/politics" className="nav-link">violent-crimes</Link>
+        <Link href="/economy" className="nav-link">Drug Trafficking</Link>
+        <Link href="/tech" className="nav-link">Money Laundering</Link>
+        <Link href="/market-and-finance" className="nav-link">Extortion and Racketeering</Link>
+        <Link href="/opinion" className="nav-link">Human Trafficking</Link>
+
             </div>
             <div className="search-container">
               <button className="search-btn">

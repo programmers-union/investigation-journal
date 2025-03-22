@@ -7,16 +7,18 @@ const ArticleSection = () => {
     <Container className="article-container py-4">
       <Row>
         <Col>
-          <h1 className="article-title mb-4">Wall Street Fears Trump Will Wreck the Soft Landing</h1>
+          <h1 className="article-title mb-4">Operation Against Mafia of Sicily: A Major Strike in Palermo
+          </h1>
           
           <div className="chart-container my-4 py-3">
-            <div className="chart-title mb-3">Change in S&P 500 since the inauguration day of Trump's first and second term</div>
+            <div className="chart-title mb-3">Italian authorities have executed one of the biggest anti-Mafia operations in recent years, arresting 181 people connected to Sicilian Mafia clans.</div>
             
             <div className="text-center">
               
               <img 
-                src="https://images.wsj.net/im-93935367?width=368&height=245&pixel_ratio=1.5" 
-                alt="Chart showing S&P 500 changes during Trump's first and second terms" 
+                src="https://static01.nyt.com/images/2025/02/11/multimedia/11italy-mafia-1-wzjl/11italy-mafia-1-wzjl-videoSixteenByNine3000.jpg
+" 
+                alt="operation against mafia" 
                 className="img-fluid my-3"
               />
             </div>
@@ -33,7 +35,8 @@ const ArticleSection = () => {
             </div>
             
             <div className="chart-footer mt-2 text-center">
-              <span className="text-muted">TRADING DAYS SINCE INAUGURATION DAY</span>
+              <span className="text-muted"> Centered on Palermo, the operation demonstrates a commitment to prevent the Cosa Nostra's governing system, the Cupola, from reemerging.
+              </span>
             </div>
           </div>
         </Col>

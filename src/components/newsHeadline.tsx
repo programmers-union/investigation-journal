@@ -2,6 +2,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Article from '@/types/Article';
+
 interface NewsHeadlineProps extends Article {}
 
 const NewsHeadline: React.FC<NewsHeadlineProps> = ({ title, subtitle, readTime }) => {

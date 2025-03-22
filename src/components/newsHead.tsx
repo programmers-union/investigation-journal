@@ -36,7 +36,7 @@ const NewsHead: React.FC<NewsHeadProps> = ({
   ]
 }) => {
   return (
-    <div className="container-fluid px-0">
+    <div className="container-fluid px-3">
       {/* Section Header with View All */}
       <div className="row border-bottom border-top py-3">
         <div className="col-12 d-flex justify-content-between align-items-center">
@@ -49,7 +49,7 @@ const NewsHead: React.FC<NewsHeadProps> = ({
 
       {/* Main Article */}
       {mainArticle && (
-        <div className="row border-bottom py-3">
+        <div className="row  py-3">
           <div className="col-12 d-flex">
             <div className="col-4">
               {mainArticle.image && (
@@ -68,14 +68,8 @@ const NewsHead: React.FC<NewsHeadProps> = ({
         </div>
       )}
 
-      {/* Side Articles */}
-      {sideArticles.map((article, index) => (
-        <div key={article.id} className="row border-bottom py-3">
-          <div className="col-12">
-            <h3 className="fw-bold fs-5">{article.title}</h3>
-          </div>
-        </div>
-      ))}
+     
+ 
     </div>
   );
 };

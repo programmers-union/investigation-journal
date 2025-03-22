@@ -19,7 +19,7 @@ interface PopularNewsSectionProps {
 const PopularNewsSection: React.FC<PopularNewsSectionProps> = ({ popularNews }) => {
   return (
     <div className="popular-news-section">
-      <div className="tip-box">
+      {/* <div className="tip-box">
         <div className="tip-content">
           <div className="envelope-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -32,11 +32,11 @@ const PopularNewsSection: React.FC<PopularNewsSectionProps> = ({ popularNews }) 
             <div className="tip-subtitle">Here's how to submit</div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <hr className="divider border bottom border-black" />
       
-      <h2 className="section-title ">Most Popular News</h2>
+      
       
       <div className="popular-news-list">
         {popularNews.map((newsItem) => (
