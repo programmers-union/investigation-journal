@@ -1,10 +1,10 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 interface NewsArticle {
   id: string;
   title: string;
-  summary: string;
+  description: string;
   readTime?: string;
   isExclusive?: boolean;
   slug: string;
@@ -27,7 +27,7 @@ const SideArticles: React.FC<SideArticlesProps> = ({ articles = [] }) => {
             <Link href={`/article/${article.slug}`}>{article.title}</Link>
           </h3>
           
-          <p className="article-summary">{article.summary}</p>
+          <p className="article-summary">{article.description}</p>
           
           {article.readTime && (
             <div className="read-time">
