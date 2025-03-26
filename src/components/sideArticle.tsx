@@ -4,7 +4,7 @@ import React from "react";
 interface NewsArticle {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   readTime?: string;
   isExclusive?: boolean;
   slug: string;

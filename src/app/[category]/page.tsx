@@ -10,6 +10,9 @@ import criminalPsychologyData from '@/data/criminalPsychologyData.json'
 import truecrimeStoriesData from    '@/data/truecrimeStoriesData.json'
 import violentCrimeData from '@/data/violentCrimeData.json';
 import drugTraffickingCrimeData from '@/data/drugTraffickingCrimeData.json';
+import moneyLaunderingData from '@/data/moneyLaunderingData.json';
+import extortionAndRacketeeringData from '@/data/extortionAndRacketeeringData.json';
+
 // Define the article type
 interface Article {
   title: string;
@@ -55,6 +58,12 @@ function fetchArticles(category: string): any {
   }
   if(category==='drug-trafficking'){
     return drugTraffickingCrimeData;
+  }
+  if(category==='money-laundering'){
+    return moneyLaunderingData;
+  }
+  if(category==='extortion-and-racketeering'){
+    return extortionAndRacketeeringData;
   }
 }
 
